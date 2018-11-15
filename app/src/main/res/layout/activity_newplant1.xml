@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".newplant1"
+    android:background="@android:color/darker_gray">
+
+    <ImageButton
+        android:id="@+id/newplantBtn3"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_above="@+id/imageButton2"
+        android:layout_alignStart="@+id/imageButton2"
+        android:background="@null"
+        android:onClick="newplant1Activity"
+        app:srcCompat="@drawable/newplant" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="116dp"
+        android:layout_toStartOf="@+id/imageButton2"
+        android:text="New Plant"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@null"
+        android:onClick="alarmActivity"
+        app:srcCompat="@drawable/prevbtn" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="281dp"
+        android:layout_height="298dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="No Plants to show."
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="340dp"
+        android:layout_height="162dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:background="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/etPlantName"
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginBottom="-81dp"
+        android:text="Enter Plant Name"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/okBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="138dp"
+        android:onClick="saveSP"
+        android:text="OK" />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/okBtn"
+        android:layout_centerHorizontal="true"
+        android:onClick="newplantActivity"
+        android:text="CANCEL" />
+
+</RelativeLayout>
